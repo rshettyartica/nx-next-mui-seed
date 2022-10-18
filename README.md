@@ -37,8 +37,10 @@ npx nx g lib ui --directory=shared --component=false
 ### Create a component within scoped library
 
 ```bash
-npx nx g component button --project=shared-ui
+npx nx g component toolbar --project=shared-ui -e
 ```
+
+Under the shared-ui directory, create the toolbar component and export it from the index.ts file.
 
 ### Remove a library
 
