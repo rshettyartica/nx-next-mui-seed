@@ -53,7 +53,7 @@ Dry run will not remove the library directly, but will show you what will be rem
 ### Storybook configuration
 
 ```bash
-nx g @nrwl/react:storybook-configuration project-name
+npx nx generate @nrwl/react:storybook-configuration --name=shared-ui --cypressDirectory=storybook-e2e --tsConfiguration=true
 ```
 
 ## Important concepts
