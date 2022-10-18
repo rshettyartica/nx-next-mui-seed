@@ -56,6 +56,12 @@ Dry run will not remove the library directly, but will show you what will be rem
 npx nx generate @nrwl/react:storybook-configuration --name=shared-ui --cypressDirectory=storybook-e2e --tsConfiguration=true
 ```
 
+To run storybook
+
+```bash
+npx nx storybook shared-ui
+```
+
 ## Important concepts
 
 ### NX Terminologies
