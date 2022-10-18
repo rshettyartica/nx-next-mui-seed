@@ -50,6 +50,12 @@ npx nx g rm button --dry-run
 
 Dry run will not remove the library directly, but will show you what will be removed.
 
+### Storybook configuration
+
+```bash
+nx g @nrwl/react:storybook-configuration project-name
+```
+
 ## Important concepts
 
 ### NX Terminologies
