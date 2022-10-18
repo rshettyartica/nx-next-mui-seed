@@ -28,6 +28,26 @@ npx nx generate @nrwl/next:page --name=about --style=css
 npx nx generate @nrwl/next:page --name="[id]" --style=none --directory=user
 ```
 
+### Create a scoped library
+
+```bash
+npx nx g lib ui --directory=shared --component=false
+```
+
+### Create a component within scoped library
+
+```bash
+npx nx g component button --project=shared-ui
+```
+
+### Remove a library
+
+```bash
+npx nx g rm button --dry-run
+```
+
+Dry run will not remove the library directly, but will show you what will be removed.
+
 ## Important concepts
 
 ### NX Terminologies
@@ -53,6 +73,24 @@ npx nx generate @nrwl/next:page --name="[id]" --style=none --directory=user
 - **Utility**
   Libraries that contain common utilities that are shared by many projects.
 
+### NX Library Scoped Grouping
+
+A library scope is:
+
+- a logical grouping to organize libraries semantically
+- represented by a directory
+
+The goal of a scope is to provide insights in what part of the logic a library deals with, so that:
+
+- all team members can immediately see from the scope whether or not they can consume a library in their application or library
+- the maintainers of the library know exactly which applications and libraries can depend on their library and have full awareness of the impact of their changes when they update a library
+
+To name a scope, we use the following rules:
+
+- If a library is built specifically for use in one application, its scope is the application name e.g. "stoke-ui", "decoder-ui".
+- If a library is built specifically for use in all applications and libraries, its scope is "shared".
+
 ## NX References
 
 - [Integrated vs package-based](https://nx.dev/concepts/integrated-vs-package-based)
+- [Grouping Libraries](https://nx.dev/more-concepts/grouping-libraries)
