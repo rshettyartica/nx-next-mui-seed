@@ -1,6 +1,7 @@
 // import styles from './index.module.css';
 import { GetStaticProps } from 'next';
 import FolderTree from '@nx-next-mui-seed/shared/ui/material/component/folder-tree/folder-tree';
+import Toolbar from '@nx-next-mui-seed/shared/ui/material/component/toolbar/toolbar';
 import Chart from '@nx-next-mui-seed/shared/ui/material/component/chart/chart';
 export interface AboutProps {
   name: string;
@@ -12,6 +13,8 @@ export function About(props: AboutProps) {
       <h1>Welcome to About, {props.name}!</h1>
 
       <FolderTree />
+
+      <Toolbar />
 
       <Chart />
     </div>
