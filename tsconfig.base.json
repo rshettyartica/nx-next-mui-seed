@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-next-mui-seed/shared/ui": ["libs/shared/ui/src/index.ts"]
+      "@nx-next-mui-seed/shared/ui/*": ["libs/shared/ui/src/lib/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

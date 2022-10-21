@@ -45,7 +45,7 @@ Under the shared-ui directory, create the toolbar component and export it from t
 ### Remove a library
 
 ```bash
-npx nx g rm button --dry-run
+npx nx g rm shared-ui --dry-run
 ```
 
 Dry run will not remove the library directly, but will show you what will be removed.
