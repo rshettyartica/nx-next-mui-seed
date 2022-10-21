@@ -31,21 +31,21 @@ npx nx generate @nrwl/next:page --name="[id]" --style=none --directory=user
 ### Create a scoped library
 
 ```bash
-npx nx g lib ui --directory=shared --component=false
+npx nx g lib component --directory=shared/ui/material --component=false
 ```
 
 ### Create a component within scoped library
 
 ```bash
-npx nx g component toolbar --project=shared-ui -e
+npx nx g component toolbar --project=shared-ui-material-component -e
 ```
 
-Under the shared-ui directory, create the toolbar component and export it from the index.ts file.
+Under the _shared/ui/material/component_ directory, create the toolbar component and export it from the index.ts file.
 
 ### Remove a library
 
 ```bash
-npx nx g rm shared-ui --dry-run
+npx nx g rm shared-ui-material-component --dry-run
 ```
 
 Dry run will not remove the library directly, but will show you what will be removed.
@@ -53,13 +53,13 @@ Dry run will not remove the library directly, but will show you what will be rem
 ### Storybook configuration
 
 ```bash
-npx nx generate @nrwl/react:storybook-configuration --name=shared-ui --cypressDirectory=storybook-e2e --tsConfiguration=true
+npx nx generate @nrwl/react:storybook-configuration --name=shared-ui-material-component --cypressDirectory=storybook-e2e --tsConfiguration=true
 ```
 
 To run storybook
 
 ```bash
-npx nx storybook shared-ui
+npx nx storybook shared-ui-material-component
 ```
 
 ## Important concepts

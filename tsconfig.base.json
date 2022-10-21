@@ -10,12 +10,18 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": ["es2017", "dom", "dom.iterable"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "jsxImportSource": "@emotion/react",
     "baseUrl": ".",
     "paths": {
-      "@nx-next-mui-seed/shared/ui/*": ["libs/shared/ui/src/lib/*"]
+      "@nx-next-mui-seed/shared/ui/material/component/*": [
+        "libs/shared/ui/material/component/src/lib/*"
+      ],
+      "@nx-next-mui-seed/shared/ui/material/theme/*": [
+        "libs/shared/ui/material/theme/src/lib/*"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

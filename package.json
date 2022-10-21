@@ -9,6 +9,12 @@
   },
   "private": true,
   "dependencies": {
+    "@emotion/cache": "^11.10.3",
+    "@emotion/react": "^11.10.4",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.10",
     "@nrwl/next": "15.0.0",
     "core-js": "^3.6.5",
     "echarts": "^5.4.0",
